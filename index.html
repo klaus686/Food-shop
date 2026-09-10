@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Green Spoon — Order Online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="signage">
+  <div class="signage-inner">
+    <p class="signage-kicker">Order for pickup</p>
+    <h1 class="shop-name">The Green Spoon</h1>
+    <p class="shop-tagline">Home-style plates, made to order. Add items below, then send your order straight to us on WhatsApp.</p>
+    <p class="shop-meta">123 Market Street &nbsp;·&nbsp; Open 11am – 9pm &nbsp;·&nbsp; +1 (000) 000-0000</p>
+  </div>
+</header>
+
+<nav class="category-nav" id="categoryNav" aria-label="Menu categories"></nav>
+
+<main class="menu" id="menu"></main>
+
+<div class="cart-bar" id="cartBar">
+  <div class="cart-bar-inner">
+    <div class="cart-summary">
+      <span class="cart-count" id="cartCount">0 items</span>
+      <span class="cart-total" id="cartTotal">$0.00</span>
+    </div>
+    <button class="cart-toggle" id="cartToggle" type="button">View order</button>
+  </div>
+</div>
+
+<div class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-drawer-inner">
+    <div class="cart-drawer-head">
+      <h2>Your order</h2>
+      <button class="cart-close" id="cartClose" type="button" aria-label="Close order summary">Close</button>
+    </div>
+    <ul class="cart-items" id="cartItems"></ul>
+    <p class="cart-empty" id="cartEmpty">Nothing added yet — tap "Add" on a dish to start your order.</p>
+    <div class="cart-drawer-foot">
+      <div class="cart-drawer-total">
+        <span>Total</span>
+        <span id="cartDrawerTotal">$0.00</span>
+      </div>
+      <a class="whatsapp-button" id="whatsappButton" href="#" target="_blank" rel="noopener">Send order on WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p>Prices shown are examples — update them in <code>script.js</code>. Orders are sent as a WhatsApp message; nothing is charged automatically.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
